@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 4, 2024 9:00:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ManajemenStok.StokMenu" table="stok_menu" catalog="db_warung_stok" optimistic-lock="version">
+        <id name="idMenu" type="java.lang.Integer">
+            <column name="id_menu" />
+            <generator class="identity" />
+        </id>
+        <property name="namaMenu" type="string">
+            <column name="nama_menu" length="20" not-null="true" />
+        </property>
+        <property name="jumlahStok" type="int">
+            <column name="jumlah_stok" not-null="true" />
+        </property>
+        <property name="harga" type="int">
+            <column name="harga" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
